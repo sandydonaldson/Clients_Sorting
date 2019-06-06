@@ -1,0 +1,19 @@
+<table id="myTable">
+  <thead>
+    <th (click)="sortTable(0)">Key</th>
+    <th (click)="sortTable(1)">Name</th>
+    <th (click)="sortTable(2)">Partner</th>
+    <th (click)="sortTable(3)">Manager</th>
+    <th (click)="sortTable(4)">Administrator</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let client of clients">
+      <td>{{ client.Key }}</td>
+      <td>{{ client.Name }}</td>
+      <td>{{ client.Partner }}</td>
+      <td>{{ client.Administrator }}</td>
+      <td>{{ client.Manager }}</td>
+    </tr>
+  </tbody>
+  <tfoot></tfoot>
+</table>
